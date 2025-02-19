@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: JPKCom Enable Argon2
-Plugin URI: https://www.jpkc.com/
+Plugin URI: https://github.com/JPKCom/jpkcom-argon2
 Description: Enables ARGON2ID for password hashes.
 Version: 1.0.3
 Author: Jean Pierre Kolb <jpk@jpkc.com>
