@@ -24,6 +24,8 @@ if ( ! defined( constant_name: 'WPINC' ) ) {
 
 /**
  * Plugin Constants
+ *
+ * @since 2.0.2
  */
 if ( ! defined( 'JPKCOM_ARGON2_VERSION' ) ) {
     define( 'JPKCOM_ARGON2_VERSION', '2.0.2' );
@@ -34,6 +36,10 @@ if ( ! defined( 'JPKCOM_ARGON2_VERSION' ) ) {
  * Initialize Plugin Updater
  *
  * Loads and initializes the GitHub-based plugin updater with SHA256 checksum verification.
+ *
+ * @since 2.0.2
+ *
+ * @return void
  */
 add_action( 'init', static function (): void {
     $updater_file = plugin_dir_path( __FILE__ ) . 'includes/class-plugin-updater.php';
@@ -51,4 +57,11 @@ add_action( 'init', static function (): void {
     }
 }, 5 );
 
+/**
+ * Force the WordPress password hashing algorithm to Argon2id.
+ *
+ * @since 1.0.0
+ *
+ * @return string The PASSWORD_ARGON2ID algorithm identifier.
+ */
 add_filter( 'wp_hash_password_algorithm', fn(): string => PASSWORD_ARGON2ID );
