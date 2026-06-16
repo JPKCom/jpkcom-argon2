@@ -41,6 +41,7 @@ For more details visit: https://make.wordpress.org/core/2025/02/17/wordpress-6-8
 * Raised the minimum WordPress version to 6.9 and "Tested up to" to WordPress 7.0
 * Switched license metadata to the SPDX identifier `GPL-2.0-or-later` with the HTTPS license URI
 * Added PHPDoc-generated API documentation, built and deployed to gh-pages on release
+* Hardening: enabled `declare(strict_types=1)`
 
 ### 2.0.1
 * Fix Stable tag
