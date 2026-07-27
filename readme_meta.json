@@ -1,7 +1,7 @@
 {
   "Author": "Jean Pierre Kolb <jpk@jpkc.com>",
   "APIDocumentation": "Complete PHPDoc-generated API documentation is available at",
-  "Version": "2.0.4",
+  "Version": "2.0.5",
   "Description": "Enables ARGON2ID for password hashes.",
   "PluginURI": "https://github.com/JPKCom/jpkcom-argon2",
   "PluginName": "JPKCom Enable Argon2",
@@ -9,7 +9,7 @@
   "Requiresatleast": "6.9",
   "Network": "true",
   "Testedupto": "7.0",
-  "Stabletag": "2.0.4",
+  "Stabletag": "2.0.5",
   "RequiresPHP": "8.3",
   "License": "GPL-2.0-or-later",
   "LicenseURI": "https://www.gnu.org/licenses/gpl-2.0.html",
