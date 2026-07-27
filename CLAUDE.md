@@ -29,7 +29,7 @@ Intentionally minimal: a single one-line filter plus the shared updater bootstra
 
 | Constant | Value | Purpose |
 |----------|-------|---------|
-| `JPKCOM_ARGON2_VERSION` | `'2.0.4'` | Plugin version (sync with header/README/phpdoc.xml) |
+| `JPKCOM_ARGON2_VERSION` | `'2.0.5'` | Plugin version (sync with header/README/phpdoc.xml) |
 
 ---
 
