@@ -3,7 +3,7 @@
 Plugin Name: JPKCom Enable Argon2
 Plugin URI: https://github.com/JPKCom/jpkcom-argon2
 Description: Enables ARGON2ID for password hashes.
-Version: 2.0.7
+Version: 2.0.8
 Author: Jean Pierre Kolb <jpk@jpkc.com>
 Author URI: https://www.jpkc.com
 Contributors: JPKCom
@@ -12,7 +12,7 @@ Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 8.3
 Network: true
-Stable tag: 2.0.7
+Stable tag: 2.0.8
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -30,7 +30,7 @@ if ( ! defined( constant_name: 'WPINC' ) ) {
  * @since 2.0.2
  */
 if ( ! defined( 'JPKCOM_ARGON2_VERSION' ) ) {
-    define( 'JPKCOM_ARGON2_VERSION', '2.0.7' );
+    define( 'JPKCOM_ARGON2_VERSION', '2.0.8' );
 }
 
 
