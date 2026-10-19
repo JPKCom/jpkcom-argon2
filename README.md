@@ -3,7 +3,7 @@
 **Plugin Name:** JPKCom Enable Argon2  
 **Plugin URI:** https://github.com/JPKCom/jpkcom-argon2  
 **Description:** Enables ARGON2ID for password hashes.  
-**Version:** 2.0.8  
+**Version:** 2.0.9  
 **Author:** Jean Pierre Kolb <jpk@jpkc.com>  
 **Author URI:** https://www.jpkc.com  
 **Contributors:** JPKCom  
@@ -12,9 +12,10 @@
 **Tested up to:** 7.1  
 **Requires PHP:** 8.3  
 **Network:** true  
-**Stable tag:** 2.0.8  
+**Stable tag:** 2.0.9  
 **License:** GPL-2.0-or-later  
-**License URI:** https://www.gnu.org/licenses/gpl-2.0.html
+**License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
+**Update URI:** https://github.com/JPKCom/jpkcom-argon2
 
 Enables ARGON2ID for password hashes.
 
@@ -40,6 +41,12 @@ For more details visit: https://make.wordpress.org/core/2025/02/17/wordpress-6-8
 
 
 ## Changelog
+
+### 2.0.9
+* Security: the plugin header now carries `Update URI: https://github.com/JPKCom/jpkcom-argon2`. Without it, WordPress also asks wordpress.org for updates under this plugin's slug, so a same-named plugin published there with a higher version would be offered as an update of this one. With the header, wordpress.org answers nothing for this plugin and updates come only from this repository
+* Changed: the updater keeps its manifest cache, its failure marker and its fetch lock in site transients. On multisite the network now fetches the manifest once instead of once per site; on a single site nothing changes. The old per-site entries expire on their own within a day
+* Changed: the release workflow downloads phpDocumentor from a fixed GitHub release and verifies its SHA-256 before running it, instead of executing whatever phpdoc.org serves that day. No effect on the shipped plugin
+* CI: `shivammathur/setup-php` pinned to 2.40.0
 
 ### 2.0.8
 * Changed: the update manifest generator now defaults a missing `Network:` header to false instead of true, matching WordPress' own default. No change for this plugin, which declares `Network: true` explicitly
